@@ -3,12 +3,17 @@ package dev.Java10x.CadastroDeNinjas.Missões;
 import dev.Java10x.CadastroDeNinjas.Ninjas.Controller.Service.NinjaModel;
 import jakarta.persistence.*;
 import jdk.jfr.Name;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Entity
 @Table (name = "tb_missoes")
-
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class missoesModel {
 
     @Id
