@@ -1,6 +1,6 @@
-package dev.Java10x.CadastroDeNinjas.Ninjas.Controller.Service;
+package dev.Java10x.CadastroDeNinjas.Ninjas;
 
-import dev.Java10x.CadastroDeNinjas.Missões.missoesModel;
+import dev.Java10x.CadastroDeNinjas.missoes.missoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,15 +26,15 @@ public class NinjaModel {
     @Column (name = "nome")
     private String nome;
 
-    @Column (name = "idade")
-    private int idade;
-
-
     @Column(unique = true, name = "email")
     private String email;
 
+    @Column(unique = true, name = "img_url")
+    private String imgurl;
 
-    private List<missoesModel> missoesModel;
+    @Column (name = "idade")
+    private int idade;
+
 
 
     // @ManyToOne (Um ninja tem a mesma missão, porém nunca tem um ninja com duas missões

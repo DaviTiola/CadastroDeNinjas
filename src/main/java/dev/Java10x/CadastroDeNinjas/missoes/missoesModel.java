@@ -1,8 +1,7 @@
-package dev.Java10x.CadastroDeNinjas.Missões;
+package dev.Java10x.CadastroDeNinjas.missoes;
 
-import dev.Java10x.CadastroDeNinjas.Ninjas.Controller.Service.NinjaModel;
+import dev.Java10x.CadastroDeNinjas.Ninjas.NinjaModel;
 import jakarta.persistence.*;
-import jdk.jfr.Name;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package dev.Java10x.CadastroDeNinjas.Missões;
+package dev.Java10x.CadastroDeNinjas.missoes;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
