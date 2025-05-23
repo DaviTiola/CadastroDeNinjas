@@ -39,8 +39,9 @@ public class NinjaModel {
 
     // @ManyToOne (Um ninja tem a mesma missão, porém nunca tem um ninja com duas missões
     @ManyToOne
-    @JoinColumn (name = "missoes_id") //Foreing Key ou chave estrangeira
+    @JoinColumn(name = "missoes_id", nullable = true) // permite null
     private missoesModel missoes;
+
 
 
 }
