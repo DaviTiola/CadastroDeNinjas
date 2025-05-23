@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import java.sql.Savepoint;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class NinjaService {
@@ -17,6 +18,13 @@ public class NinjaService {
 
     public List<NinjaModel> listarNinjas() {
         return ninjaRepository.findAll();
+    }
+
+
+    //Listar meu ninja por ID
+    public NinjaModel listarNinjasPorId(Long id) {
+        Optional<NinjaModel>ninjaporID = ninjaRepository.findById(id);
+        return ninjaporID.orElse (null);
     }
 
 
